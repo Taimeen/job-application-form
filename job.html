@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        #p1 {
+            color: rgb(203, 138, 9);
+        }
+        #p2 {
+            color: rgba(205, 100, 10, 0.9);
+        }
+        .p1 {
+            color: #bf305d;
+        }
+        .p2 {
+            color: hsl(240, 100%, 50%);
+        }
+        .p3 {
+            color: hsla(240, 100%, 50%, 0.3);
+        }
+        #p3 {
+            color: orange;
+        }
+        #b1 {
+            border-style: dotted dashed solid double;
+            border-width: medium;
+            border-color: aqua;
+            border-radius: 10% 20% 30% 40%;
+            outline-style: dashed;
+            outline-width: 10px;
+            outline-color: blue;
+            outline-offset: 2em;
+        }
+        #pa1 {
+            border-style: dotted;
+            padding: 12%;
+            margin: 30px;
+        }
+        .con {
+            background-color: aqua;
+            display: flex;
+        }
+        .d1 {
+            background-color: #bf305d;
+            width: 150px;
+        }
+        .d2 {
+            background-color: antiquewhite;
+            height: 100px;
+            width: 300px;
+        }
+        .d3 {
+            background-color: aquamarine;
+            border-style: dashed;
+        }
+        #f1 {
+            color: #bf305d;
+            font-size: 12px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-variant: normal;
+        }
+        #t1 {
+            text-align-last: center;
+            text-decoration-line: overline underline line-through;
+            font-size: 12px;
+            text-decoration-style: dashed;
+            text-decoration-color: blue;
+            color: green;
+        }
+        #t2 {
+            text-transform: capitalize;
+            text-shadow: 3px 3px blue;
+            text-indent: 56px;
+            letter-spacing: -1px;
+            line-height: 5em;
+            word-spacing: 3em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="p1">Job Application Form</h1>
+    <form id="b1" action="#" method="post">
+        <div id="pa1">
+            <label for="fname" class="p1">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname" class="p2">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="email" class="p3">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="position" class="p1">Position Applying for:</label><br>
+            <input type="text" id="position" name="position" required><br><br>
+
+            <label for="resume">Upload Resume:</label><br>
+            <input type="file" id="resume" name="resume" required><br><br>
+
+            <div class="con">
+                <div class="d1">
+                    <h3 class="p1">Education</h3>
+                </div>
+                <div class="d2">
+                    <label for="education">Highest Qualification:</label><br>
+                    <input type="text" id="education" name="education" required><br><br>
+                </div>
+            </div>
+
+            <div class="d3">
+                <h3>Skills</h3>
+                <label for="skills">List Your Skills:</label><br>
+                <textarea id="skills" name="skills" rows="4" cols="50" required></textarea><br><br>
+            </div>
+
+
+            <input type="submit" value="Submit" class="p1"><br><br>
+        </div>
+    </form>
+
+    <footer id="f1">
+        <p id="t1">Job Application Footer</p>
+        <p id="t2">Thank You for Applying!</p>
+    </footer>
+
+</body>
+</html>
